@@ -16,9 +16,9 @@ setup(
     description='A simple Django app to manage a bill of materials.',
     long_description=README,
     long_description_content_type='text/markdown',
-    url='https://lakesite.net/',
-    author='Andy Duncan',
-    author_email='andy@lakesite.net',
+    url='https://fixturfab.com/',
+    author='Duncan Lowder',
+    author_email='duncan@fixturfab.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

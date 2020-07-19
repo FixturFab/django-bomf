@@ -30,7 +30,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <div class="navbar-fixed">
-    <nav class="green lighten-1">
+    <nav class="cyan darken-4">
         <div class="nav-wrapper">
 
             {% if user.is_authenticated %}
@@ -78,7 +78,7 @@
     <div id="content" class="container">
             <ul class="messages">
                 {% for message in messages %}
-                    <li{% if message.tags %} class="card alert alert-{{ message.tags }} alert-dismissible"{% endif %} role="alert">
+                    <li {% if message.tags %} class="card alert alert-{{ message.tags }} alert-dismissible"{% endif %} role="alert">
                         {{ message.message|safe }}
                     </li>
                 {% endfor %}
@@ -89,29 +89,15 @@
     {% block action-btn %}{% endblock %}
 </main>
 
-<footer class="page-footer green lighten-1">
+<footer class="page-footer cyan darken-4 lighten-1">
     <div class="container">
         <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Help django-bom Grow</h5>
-                <p class="grey-text text-lighten-4">We hope you are as excited about django-bom as we are! Please reach out if you'd like to learn more at <a href="mailto:andy@lakesite.net">andy@lakesite.net</a></p>
-            </div>
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
                     <li>...</li>
                 </ul>
             </div>
-        </div>
-        <div class="row center">
-            <!-- Place this tag where you want the button to render. -->
-            <a class="github-button" href="https://github.com/lakesite/django-bom" data-size="large" data-show-count="true" aria-label="Star lakesite/django-bom on GitHub">Star</a>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            django-bom is a django open source project.
-            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
         </div>
     </div>
 </footer>

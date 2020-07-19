@@ -340,7 +340,7 @@ class PartClassCSVForm(forms.Form):
 
         except UnicodeDecodeError as e:
             self.add_error(None, forms.ValidationError("CSV File Encoding error, try encoding your file as utf-8, and upload again. \
-                If this keeps happening, reach out to andy@lakesite.net with your csv file and we'll do our best to \
+                If this keeps happening, reach out to support@fixturfab.com with your csv file and we'll do our best to \
                 fix your issue!", code='invalid'))
             logger.warning("UnicodeDecodeError: {}".format(e))
             raise ValidationError("Specific Error: {}".format(e),
@@ -542,7 +542,7 @@ class PartCSVForm(forms.Form):
 
         except UnicodeDecodeError as e:
             self.add_error(None, forms.ValidationError("CSV File Encoding error, try encoding your file as utf-8, and upload again. \
-                If this keeps happening, reach out to andy@lakesite.net with your csv file and we'll do our best to \
+                If this keeps happening, reach out to support@fixturfab.com with your csv file and we'll do our best to \
                 fix your issue!", code='invalid'))
             logger.warning("UnicodeDecodeError: {}".format(e))
             raise ValidationError("Specific Error: {}".format(e), code='invalid')
@@ -937,7 +937,7 @@ class BOMCSVForm(forms.Form):
                     elif len(subparts) > 1:
                         self.add_error(None,
                                        "Found {0} entries for part {1} for subpart on row {2}. This should not happen. "
-                                       "Please let andy@lakesite.net know. Uploading of this subpart skipped.".format(
+                                       "Please let support@fixturfab.com know. Uploading of this subpart skipped.".format(
                                            len(subparts), row_count, part_dict['part_number']))
                         continue
 
@@ -1022,7 +1022,7 @@ class BOMCSVForm(forms.Form):
                     self.warnings.append("The following BOM references are associated with multiple parts: " + str(sorted_duplicate_references))
         except UnicodeDecodeError as e:
             self.add_error(None, forms.ValidationError("CSV File Encoding error, try encoding your file as utf-8, and upload again. \
-                If this keeps happening, reach out to andy@lakesite.net with your csv file and we'll do our best to \
+                If this keeps happening, reach out to support@fixturfab.com with your csv file and we'll do our best to \
                 fix your issue!", code='invalid'))
             logger.warning("UnicodeDecodeError: {}".format(e))
             raise ValidationError("Specific Error: {}".format(e),

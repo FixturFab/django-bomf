@@ -28,7 +28,7 @@ h5 {
     font-size: 1.3rem;
 }
 
-.tabs { 
+.tabs {
     /* Materialize has a bug that shows the scrollbar sometimes, this prevents it */
     /*overflow-x: hidden;*/
 }
@@ -102,18 +102,18 @@ td, tr {
 }
 
 .tabs .tab a{
-    /*@extend .green .lighten-3;*/
-    color:#a5d6a7;
+    /*@extend .cyan .lighten-3;*/
+    color:#80deea;
 }
 .tabs .tab a:hover,.tabs .tab a.active {
     background-color:transparent;
-    color:#66bb6a;
+    color:#006064;
 }
 .tabs .tab.disabled a,.tabs .tab.disabled a:hover {
-    color:rgba(165,214,167,0.5);    
+    color:rgba(165,214,167,0.5);
 }
 .tabs .indicator {
-    background-color:#66bb6a;
+    background-color:#006064;
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
@@ -123,9 +123,9 @@ td, tr {
 /* Alerts */
 .alert {
     padding: 5px;
-    background-color: #dcedc8; /* light green lighten-4 */
+    background-color: #b2ebf2; /* light cyan lighten-4 */
     margin: 5px;
-    border: solid #aed581 1px; /* light green lighten-2 */
+    border: solid #4dd0e1 1px; /* light cyan lighten-2 */
     border-radius: 10px;
 }
 
@@ -136,8 +136,8 @@ td, tr {
 }
 
 .alert-warning {
-    background-color: #f0f4c3; /* lime lighten-4 */
-    border: solid #dce775 1px; /* lime lighten-2 */
+    background-color: #b2dfdb; /* lime lighten-4 */
+    border: solid #4db6ac 1px; /* lime lighten-2 */
 }
 
 .messages.tags {
@@ -173,15 +173,15 @@ table.treetable tr.expanded span.indenter a {
 }
 
 .primary-color {
-    color: #66bb6a;
+    color: #006064;
 }
 
 .dark-color {
-    color: #338a3e;
+    color: #004d40;
 }
 
 .light-color {
-    color: #98ee99;
+    color: #0097a7;
 }
 
 .btn-icon-round {

@@ -2,6 +2,7 @@ MIT License
 
 Copyright (c) 2017 Mike Kasparian
 Copyright (c) 2020 Lakesite.Net, LLC
+Copyright (c) 2020 FixturFab, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
